@@ -1,1 +1,127 @@
-<h1>Git<h1>
+<h1>Questions about Git</h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1. Inicialización de un repositorio de git nuevo en una aplicación existente
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git init .</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2. Creación de un branch nuevo
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git checkout -b "Nombre de la rama nueva"</code> sin las comillas
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3. Realizar un commit incluyendo todos los cambios actuales
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git commit -am 'mensaje'</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        4. Cómo enviar el código al repositorio remoto
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git push origin main</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        5. Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull.
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git push -u origin main</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        6. Diferencia entre un reset y revert
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Reset es para deshacer los cambios locales en el estado
+            de un repositorio de Git</strong></br>
+        <a target="_blank" class="btn btn-light" href="https://www.atlassian.com/es/git/tutorials/undoing-changes/git-reset" role="button">Saber más</a> </br>
+        <code>git reset (--patch | -p) [tree-ish] [--] [ruta]</code></br>
+        <strong>Revert deshace los cambios realizados por un commit anterior
+            creando un commit completamente nuevo, todo esto sin alterar el
+            historial de commits.</strong></br>
+        <code>git revert [--[no-]edit] [-n] [-m parent-number] [-s] [-S[<keyid>]] <commit></code></br>
+        <a target="_blank" class="btn btn-light" href="https://www.atlassian.com/es/git/tutorials/undoing-changes/git-revert" role="button">Saber más</a> </br>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        7. Además de cambiar de ramas, para qué más se puede utilizar el comando git checkout
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+            <li>Para crear ramas</li>
+            <li>Para deshacer cambios</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingEight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        8. Como puede ver los commits que se han realizado en el proyecto
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git log</code>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingNine">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+        9. He modificado dos archivos y quiero hacer un commit por cada uno de ellos, cómo lo puedo hacer?
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <code>git add file1.txt</code> </br>
+        <code>git commit -m "change file 1"</code> </br>
+        <code>git add file2.txt</code> </br>
+        <code>git commit -m "change file 2"</code> </br>
+      </div>
+    </div>
+  </div>
+</div>
