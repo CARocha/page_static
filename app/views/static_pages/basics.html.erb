@@ -1,0 +1,55 @@
+<h1>Questions for Basics</h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1. Qué es un resource en el contexto de una aplicación web REST en Ruby on Rails?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Un recuerso es cualquier objeto que se puede acceder por URI.</strong>
+        Se le llama Resource por que son recursos que intregran practicamente todo
+        el CRUD de la aplicación, es decir, la Creación(Create), la Lectura(Read),
+        la Actualización(Update) y la eliminación(Delete) del registro
+        por ejemplo: <code>/posts</code> a partir de ahi se accede a los recursos
+        del objecto Post,  <code>/posts/1</code> un GET al objecto id: 1 para leer, pero
+        tambien se podria usar para actualizar el registro, eso va a depender del
+        metodo a usar sea GET, POST, PUT o DELETE.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2. Qué puede hacerse con un resource?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Un CRUD o Operaciones sobre los datos</strong> es decir,
+        acceder a datos, crearlos, actualizarlos e incluso eliminarlos, con varios
+        metodos o verbos http como son <code>GET</code>,
+        <code>POST</code>, <code>PUT</code>, 
+        <code>DELETE</code>,
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3. Qué es RESTful routing?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>RESTful routing (enrutamiento RESTful).</strong> Es un conjunto
+        de estándares que se utilizan para crear rutas eficientes y reutilizables,
+        por ejemplo
+        <code>/api/v1/posts/1</code>, ese es un estandar para acceder a un recurso, el
+        objetivo es mapear los metodos HTTP (GET, POST, PUT, DELETE) en el RESTful
+        routing.
+      </div>
+    </div>
+  </div>
+</div>
