@@ -1,1 +1,170 @@
-<h1>Ruby<h1>
+<h1>Questions about Ruby</h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1. Interpolación de strings
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Esto se logra usando dentro de una cadena de doble comilla
+        <code>"cadena"</code> una almoadilla <code>#</code> con llaves simples
+        <code>{}</code> </strong>
+        por ejemplo: <code>puts "La suma de 5 más 10 es : #{5+10}"</code>.
+        Esto nos daria: como salida: La suma de 5 más 10 es: 15
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2. Cómo se declara un array y cómo se adiciona un elemento al final del array
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Un array es un objeto que almacenas otros objectos</strong>
+        se declaran de la siguiente manera,
+        <code>words = []</code>, aqui declaramos un array vacio, pero tambien podemos
+        declarar array con valores ya por defecto <code>words = ["one","two"]</code>
+        para adicionar un nuevo elemento usamos su metodo llamado append de esta manera
+        <code>words.append("Three")</code> este valor se adicionara al final del array words
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3. Cómo se itera un array utilizando el comando each
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Se llama al metodo each de un objeto iterable</strong> luego agregamos
+        la variable que querramos en el ejemplo uso i para luego imprimir en pantalla cada valor
+        que contiene i
+        <code>words.each do |i| puts i end</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        4. Cómo se declara un hash
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Los hash con objetos que se guardan con llave, valor</strong>, y se
+        declaran de la siguiente manera
+        <code>variable_hash = { "one" => "uno", "two" => "dos", "three" => "tres" }</code> tambien se
+        pueden obtener los valores atraves de sus llaves <code>variable_hash["one"]</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        5. Cómo se itera un hash utilizando el comando each
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Vamos a usar la misma forma que los array</strong>, pero declarando
+        dos variables una para las llave y la otra para el valor </br>
+        <code>variable_hash.each do |key, value|
+            puts "#{key} ----- #{value}"
+            end</code>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        6. Que es un block en ruby? De un ejemplo de cómo utilizarlo
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Un bloque es un fragmento de código que sigue a la invocación
+        de un método, delimitado por llaves {} o por do/end:</strong> por ejemplo: </br>
+        <code>calificaciones = [4,3,7,8]</code></br>
+        <code>media = 0 </code></br>
+        <code>total = 0 </code></br>
+        <code>calificaciones.each do |number|</code></br>
+        &nbsp;&nbsp;<code>total += number</code></br>
+        <code>end</code></br>
+        <code>media = total / calificaciones.length</code></br>
+        <code>puts media</code></br>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        7. Cual es la convención en Ruby a la hora de nombrar variables?
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+            <li>debe estar toda en minúsculas</li>
+            <li>No debe comenzar con los caracteres especiales &(ampersand), $(dólar)</li>
+            <li>Si el nombre contiene varias palabras, debe estar separado por guiones bajos (_), por ejemplo: primer_nombre</li>
+            <li>Evitar las variables de un solo carácter, por ejemplo: a, b</li>
+            <li>Se prefieren nombres de variables claros y descriptivos sin abreviaturas</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingEight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        8. Qué son attr_reader, attr_writer y attr_accessor? Para qué sirven?
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>attr_accessor es un shorcuts para implicitamente declarar attr_reader,
+        attr_writer</strong> se utiliza para poder leer <code>attr_reader</code> o para
+        cambiar <code>attr_writer</code> una instancia de variable en una clase y queremos
+        exponerla al mundo. Por ejemplo </br>
+        <code>class Food</code></br>
+          &nbsp;&nbsp;<code>def initialize(protein)</code></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>@protein = protein</code></br>
+          &nbsp;&nbsp;<code>end</code></br>
+        <code>end</code></br>
+        <code>bacon = Food.new(21)</code></br>
+        <code>bacon.protein</code></br>
+        Esto nos daria un error ya que la clase Food no tiene un metodo definido para
+        capturar el valor de la variable protein: # NoMethodError: undefined method 'protein' </br>
+        Para solucionar el error seria que crearamos el siguiente metodo dentro de la clase Food: </br>
+
+        <code>def protein</code></br>
+          &nbsp;&nbsp;<code>@protein</code></br>
+        <code>end</code></br>
+      Esto en otros lenguajes se les conoce como los getter, ahora como seria cambiar el valor
+      de la variable es decir el setter, bueno definiendo otro metodo dentro de la clase Food </br>
+      <code>def protein=(value)</code></br>
+          &nbsp;&nbsp;<code>@protein =  value</code></br>
+        <code>end</code></br>
+        bacon.protein = 25 </br>
+        Ahora existe otra mejor manera de hacer esto, si con <code>attr_accessor</code> </br>
+        <code>class Food</code></br>
+         &nbsp;&nbsp;<code>attr_accessor :protein</code></br>
+          &nbsp;&nbsp;<code>def initialize(protein)</code></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>@protein = protein</code></br>
+          &nbsp;&nbsp;<code>end</code></br>
+        <code>end</code></br>
+        <code>bacon = Food.new(21)</code></br>
+        <code>bacon.protein</code></br>
+        con esto attr_accessor crea ambos metodos attr_reader y attr_writer por nosotros
+        pero si queremos solo usar attr_reader se declararia asi: </br>
+        <code>attr_reader :variable1, :value2, :other_variable?</code></br>
+        y practicamente lo mismo para <code>attr_writer</code></br></br></br>
+      </div>
+    </div>
+  </div>
+</div>
